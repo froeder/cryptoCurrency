@@ -1,7 +1,7 @@
 import DashboardLayout from '@/pages/Layout/DashboardLayout.vue'
 
 import Dashboard from '@/pages/Dashboard.vue'
-import Crypto from '@/pages/Crypto.vue'
+import Evolution from '@/pages/Evolution.vue'
 
 const routes = [
   {
@@ -15,9 +15,9 @@ const routes = [
         component: Dashboard
       },
       {
-        path: 'crypto',
-        name: 'Crypto',
-        component: Crypto
+        path: 'evolution',
+        name: 'Evolution',
+        component: Evolution
       }
     ]
   }

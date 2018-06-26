@@ -8,9 +8,9 @@
         <md-icon>dashboard</md-icon>
         <p>Dashboard</p>
       </sidebar-link>
-      <sidebar-link to="/crypto">
+      <sidebar-link to="/evolution">
         <md-icon>dashboard</md-icon>
-        <p>Crypto</p>
+        <p>Evolution</p>
       </sidebar-link>
     </side-bar>
 

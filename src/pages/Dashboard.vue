@@ -23,6 +23,7 @@
           </template>
         </stats-card>
       </div>
+      <h1>More Coins is comming soon :)</h1>
     </div>
   </div>
 </template>
