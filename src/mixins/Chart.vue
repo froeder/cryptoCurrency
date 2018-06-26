@@ -30,7 +30,7 @@ export default {
         labels: this.label,
         datasets: [
           {
-            label: 'GitHub Commits',
+            label: 'Prices Evolution',
             backgroundColor: '#f87979',
             data: this.serie
           }

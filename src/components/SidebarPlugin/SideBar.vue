@@ -38,11 +38,11 @@ export default{
   props: {
     title: {
       type: String,
-      default: 'Vue MD'
+      default: 'Crypto Currency'
     },
     backgroundImage: {
       type: String,
-      default: require('@/assets/img/sidebar-2.jpg')
+      default: require('@/assets/img/crypto_coins.jpg')
     },
     imgLogo: {
       type: String,

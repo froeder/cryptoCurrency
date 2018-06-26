@@ -2,11 +2,11 @@
   <div class="content">
     <div class="md-layout">
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
-        
-          <monthly-income/>
-        
+          <monthly-income :width="100" :height="30"/>
       </div>
-      
+      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
+          <monthly-income :width="100" :height="30"/>
+      </div>
     </div>
   </div>
 </template>
