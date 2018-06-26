@@ -3,6 +3,7 @@ import { Line } from 'vue-chartjs'
 import axios from 'axios'
 
 export default {
+  name : 'MonthlyIncome',
   extends: Line,
   data () {
     return {
@@ -14,24 +15,41 @@ export default {
       serie: []
     }
   },
+  methods: {
+
+  },
   mounted () {
-    let uri = 'https://api.coindesk.com/v1/bpi/historical/close.json?start=2018-06-01?for=yesterday'
+    let uri = 'https://min-api.cryptocompare.com/data/histoday?fsym=BTC&tsym=USD&limit=30&aggregate=3&e=CCCAGG'
     axios.get(uri).then((response) => {
-      this.responseData = response.data.bpi
-      //console.log(Object.values(this.teste))
-      var responseObject = Object.entries(this.responseData)
-      //console.log(teste2)
-      for (let i = 0 ; i < responseObject.length ; i++){
-        this.label.push(responseObject[i][0])
-        this.serie.push(responseObject[i][1])
+      var responseData = response.data.Data ;
+
+      for (let i = 0 ; i < responseData.length ; i++){
+        
+        this.serie.push(responseData[i].close)
+
+        var unixtimestamp = responseData[i].time
+
+        var months_arr = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+
+        var date = new Date(unixtimestamp*1000);
+
+        var year = date.getFullYear();
+
+        var month = months_arr[date.getMonth()];
+
+        var day = date.getDate();
+
+        var convdataTime = day+ '-' +month+ '-'+year
+
+        this.label.push(convdataTime)
       }
 
       this.renderChart({
         labels: this.label,
         datasets: [
           {
-            label: 'Prices Evolution',
-            backgroundColor: '#f87979',
+            label: 'BTC - Value Evolution U$',
+            backgroundColor: 'rgba(247, 147, 26, 0.64)',
             data: this.serie
           }
         ],

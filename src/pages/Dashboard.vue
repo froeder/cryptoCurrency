@@ -3,7 +3,7 @@
     <div class="md-layout">
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-30">
         <stats-card data-background-color="green">
-          <template slot="header"><h1>BTC</h1>
+          <template slot="header"><i class="cc BTC" title="BTC"></i>
           </template>
 
           <template slot="content">
@@ -29,7 +29,7 @@
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-30">
         <stats-card data-background-color="green">
           <template slot="header">
-            <h1>ETH</h1>
+            <i class="cc ETH" title="ETH"></i>
           </template>
 
           <template slot="content">
@@ -55,7 +55,7 @@
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-30">
         <stats-card data-background-color="green">
           <template slot="header">
-            <h1>ETC</h1>
+            <i class="cc ETC" title="ETC"></i>
           </template>
 
           <template slot="content">
@@ -81,7 +81,7 @@
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-30">
         <stats-card data-background-color="green">
           <template slot="header">
-            <h1>DOGE</h1>
+            <i class="cc DOGE" title="DOGE"></i>
           </template>
 
           <template slot="content">
@@ -107,7 +107,7 @@
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-30">
         <stats-card data-background-color="green">
           <template slot="header">
-            <h1>LTC</h1> 
+            <i class="cc LTC" title="LTC"></i>
           </template>
 
           <template slot="content">
@@ -133,7 +133,7 @@
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-30">
         <stats-card data-background-color="green">
           <template slot="header">
-            <h1>XRP</h1>
+            <i class="cc XRP" title="XRP"></i>
           </template>
 
           <template slot="content">
