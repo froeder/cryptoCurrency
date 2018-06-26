@@ -184,26 +184,21 @@ export default{
       btcValue: 0,
       btcValueReal: 0,
       btcVariacaoDia: 0,
-
       ethValue: 0,
       ethValueReal: 0,
       ethVariacaoDia: 0,
-
       etcValue: 0,
       etcValueReal: 0,
       etcVariacaoDia: 0,
-
       dogeValue: 0,
       dogeValueReal: 0,
       dogeVariacaoDia: 0,
-
       ltcValue: 0,
       ltcValueReal: 0,
       ltcVariacaoDia: 0,
-
       xrpValue: 0,
       xrpValueReal: 0,
-      xrpVariacaoDia: 0,
+      xrpVariacaoDia: 0
 
     }
   },
@@ -218,7 +213,6 @@ export default{
 
     let url = 'https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,ETH,ETC,DOGE,XRP,LTC&tsyms=USD,BRL'
     axios.get(url).then((response) => {
-      console.log(response)
       this.btcValue = response.data.RAW.BTC.USD.PRICE.toFixed(2)
       this.btcValueReal = response.data.RAW.BTC.BRL.PRICE.toFixed(2)
       this.btcVariacaoDia = response.data.RAW.BTC.BRL.CHANGEDAY.toFixed(2)
