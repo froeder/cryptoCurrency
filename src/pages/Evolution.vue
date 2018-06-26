@@ -39,6 +39,8 @@ export default{
 }
 
 //TODO: ICNLUIR POWERED BY BPI API
+//TODO GRÁFICO EM TEMPO REAL 
+//https://min-api.cryptocompare.com/
 </script>
 
 
