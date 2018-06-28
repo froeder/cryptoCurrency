@@ -11,6 +11,7 @@ import routes from './routes/routes'
 import GlobalComponents from './globalComponents'
 import GlobalDirectives from './globalDirectives'
 import Notifications from './components/NotificationPlugin'
+import firebase from 'firebase'
 
 // MaterialDashboard plugin
 import MaterialDashboard from './material-dashboard'
@@ -22,6 +23,16 @@ const router = new VueRouter({
   routes, // short for routes: routes
   linkExactActiveClass: 'nav-item active'
 })
+
+var config = {
+  apiKey: 'AIzaSyBXCJ1YBq1o9iIJ_mE3mfZetwG3ZwqGLYE',
+  authDomain: 'cryp-currency.firebaseapp.com',
+  databaseURL: 'https://cryp-currency.firebaseio.com',
+  projectId: 'cryp-currency',
+  storageBucket: 'cryp-currency.appspot.com',
+  messagingSenderId: '947292049486'
+}
+firebase.initializeApp(config)
 
 Vue.use(VueRouter)
 Vue.use(MaterialDashboard)

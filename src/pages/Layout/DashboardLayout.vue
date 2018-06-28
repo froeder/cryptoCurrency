@@ -9,8 +9,12 @@
         <p>Dashboard</p>
       </sidebar-link>
       <sidebar-link to="/evolution">
-        <md-icon>dashboard</md-icon>
+        <md-icon>equalizer</md-icon>
         <p>Evolution</p>
+      </sidebar-link>
+      <sidebar-link to="/auth">
+        <md-icon>person</md-icon>
+        <p>Auth</p>
       </sidebar-link>
     </side-bar>
 
